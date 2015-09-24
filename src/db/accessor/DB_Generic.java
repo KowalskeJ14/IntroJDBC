@@ -230,7 +230,7 @@ public class DB_Generic implements DBAccessor {
 		// finally clause to close the connection
 		try {
 			pstmt = buildInsertStatement(conn,tableName,colDescriptors);
-
+                        
 			final Iterator i=colValues.iterator();
 			int index = 1;
 			while( i.hasNext() ) {
